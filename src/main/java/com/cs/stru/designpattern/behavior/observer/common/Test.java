@@ -1,8 +1,5 @@
 package com.cs.stru.designpattern.behavior.observer.common;
 
-import java.util.Observable;
-import java.util.Observer;
-
 /**
  * Created by benjaminChan on 2018/7/12 0012 下午 7:54.
  */
@@ -10,29 +7,32 @@ public class Test {
 
     public static void main(String[] args) {
 //假设四个读者，两个作者
-        Reader r1 = new Reader("谢广坤");
-        Reader r2 = new Reader("赵四");
-        Reader r3 = new Reader("七哥");
-        Reader r4 = new Reader("刘能");
-        Writer w1 = new Writer("谢大脚");
-        Writer w2 = new Writer("王小蒙");
-        //四人关注了谢大脚
-        r1.subScribe("谢大脚");
-        r2.subScribe("谢大脚");
-        r3.subScribe("谢大脚");
-        r4.subScribe("谢大脚");
-        //七哥和刘能还关注了王小蒙
-        r3.subScribe("王小蒙");
-        r4.subScribe("王小蒙");
+        Reader r1 = new Reader("tom");
+        Reader r2 = new Reader("jerry");
+        Reader r3 = new Reader("ben");
+        Reader r4 = new Reader("sari");
+        Writer w1 = new Writer("xiaomi");
+        Writer w2 = new Writer("huawei");
+        
+        Platform.getInstance().add(w1);
+        Platform.getInstance().add(w2);
+        //四人关注了xiaomi
+        r1.subScribe("xiaomi");
+        r2.subScribe("xiaomi");
+        r3.subScribe("xiaomi");
+        r4.subScribe("xiaomi");
+        //ben和sari还关注了huawei
+        r3.subScribe("huawei");
+        r4.subScribe("huawei");
 
         //作者发布新书就会通知关注的读者
-        //谢大脚写了设计模式
+        //xiaomi写了设计模式
         w1.addNovel("设计模式");
-        //王小蒙写了JAVA编程思想
+        //huawei写了JAVA编程思想
         w2.addNovel("JAVA编程思想");
-        //谢广坤取消关注谢大脚
-        r1.unSubScribe("谢大脚");
-        //谢大脚再写书将不会通知谢广坤
+        //tom取消关注xiaomi
+        r1.unSubScribe("xiaomi");
+        //xiaomi再写书将不会通知tom
         w1.addNovel("观察者模式");
     }
 }
