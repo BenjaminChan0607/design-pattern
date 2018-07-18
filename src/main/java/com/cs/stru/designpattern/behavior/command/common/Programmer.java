@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.behavior.command.simple;
+package com.cs.stru.designpattern.behavior.command.common;
 
 public class Programmer {
 
