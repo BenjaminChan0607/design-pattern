@@ -9,12 +9,25 @@ public class ProductManager {
 
     private List<Task> taskList;
 
+    private List<Programmer> programmerList;
+
     public ProductManager() {
         taskList = new ArrayList<Task>();
+        programmerList = new ArrayList<Programmer>();
     }
 
     public void receive(Task task) {
         taskList.add(task);
+    }
+
+    public void addProgramer(Programmer programmer) {
+        programmerList.add(programmer);
+    }
+
+    private int currentIndex;
+
+    public Programmer assignProgramer() {
+        return programmerList.get(currentIndex == programmerList.size() ? 0 : currentIndex++);
     }
 
     public void assign() {

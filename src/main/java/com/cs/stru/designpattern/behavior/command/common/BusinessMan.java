@@ -19,18 +19,18 @@ public class BusinessMan {
         return name;
     }
 
-    public void provideDemand(ProductManager productManager, Programmer programmer) {
+    public void provideDemand(ProductManager productManager) {
         System.out.println(getName() + " provide demand");
-        productManager.receive(new Demand(programmer));
+        productManager.receive(new Demand(productManager.assignProgramer()));
     }
 
-    public void provideBug(ProductManager productManager, Programmer programmer) {
+    public void provideBug(ProductManager productManager) {
         System.out.println(getName() + " provide bug");
-        productManager.receive(new Bug(programmer));
+        productManager.receive(new Bug(productManager.assignProgramer()));
     }
 
-    public void provideProblem(ProductManager productManager, Programmer programmer) {
+    public void provideProblem(ProductManager productManager) {
         System.out.println(getName() + " provide problem");
-        productManager.receive(new Problem(programmer));
+        productManager.receive(new Problem(productManager.assignProgramer()));
     }
 }
