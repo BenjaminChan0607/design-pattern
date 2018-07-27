@@ -24,13 +24,13 @@ public class ChianTest {
         menu.put("可乐", 5);
         menu.put("雪碧", 5);
         //假设有5个分店
-        McSubbranch mcSubbranch1 = new McSubbranch(0, 0, new HashMap<String, Integer>(menu));
-        McSubbranch mcSubbranch2 = new McSubbranch(100, 120, new HashMap<String, Integer>(menu));
-        McSubbranch mcSubbranch3 = new McSubbranch(-100, -120, new HashMap<String, Integer>(menu));
-        McSubbranch mcSubbranch4 = new McSubbranch(1000, 20, new HashMap<String, Integer>(menu));
-        McSubbranch mcSubbranch5 = new McSubbranch(-500, 0, new HashMap<String, Integer>(menu));
+        Hotel hotel1 = new Hotel(0, 0, new HashMap<String, Integer>(menu));
+        Hotel hotel2 = new Hotel(100, 120, new HashMap<String, Integer>(menu));
+        Hotel hotel3 = new Hotel(-100, -120, new HashMap<String, Integer>(menu));
+        Hotel hotel4 = new Hotel(1000, 20, new HashMap<String, Integer>(menu));
+        Hotel hotel5 = new Hotel(-500, 0, new HashMap<String, Integer>(menu));
 
-        List<McSubbranch> mcSubbranchs = Arrays.asList(mcSubbranch1,mcSubbranch2,mcSubbranch3,mcSubbranch4,mcSubbranch5);
+        List<Hotel> hotels = Arrays.asList(hotel1, hotel2, hotel3, hotel4, hotel5);
 
         //小左开始订餐，假设小左的坐标是900,20
         Map<String, Integer> order = new HashMap<String, Integer>();
@@ -38,22 +38,22 @@ public class ChianTest {
         order.put("可乐", 1);
         order.put("薯条", 1);
 
-        print(mcSubbranchs);
+        print(hotels);
         System.out.println("------------------------------------------");
         //小左开始一家一家挨着尝试订餐，直到成功
-        for (McSubbranch mcSubbranch : mcSubbranchs) {
-            if (mcSubbranch.order(900, 20, order)) {
-                System.out.println("订餐成功，接受订单的分店是：" + mcSubbranch);
+        for (Hotel hotel : hotels) {
+            if (hotel.order(900, 20, order)) {
+                System.out.println("订餐成功，接受订单的分店是：" + hotel);
                 break;
             }
         }
         System.out.println("------------------------------------------");
-        print(mcSubbranchs);
+        print(hotels);
     }
 
-    public static void print(List<McSubbranch> mcSubbranchs){
-        for (McSubbranch mcSubbranch : mcSubbranchs) {
-            System.out.println("[" + mcSubbranch + "]的菜单:" + mcSubbranch.getMenu());
+    public static void print(List<Hotel> hotels){
+        for (Hotel hotel : hotels) {
+            System.out.println("[" + hotel + "]的菜单:" + hotel.getMenu());
         }
     }
 }

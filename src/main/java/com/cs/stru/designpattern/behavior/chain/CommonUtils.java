@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.behavior.chain.simple;
+package com.cs.stru.designpattern.behavior.chain;
 
 import java.util.Map;
 
