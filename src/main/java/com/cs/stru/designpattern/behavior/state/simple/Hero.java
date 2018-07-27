@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.behavior.state;
+package com.cs.stru.designpattern.behavior.state.simple;
 
 public class Hero {
     public static final int COMMON = 1;//正常状态
@@ -7,7 +7,7 @@ public class Hero {
 
     public static final int SPEED_DOWN = 3;//减速状态
 
-    public static final int SWIM = 4;//眩晕状态
+    public static final int DIZZINESS = 4;//眩晕状态
 
     private int state = COMMON;//默认是正常状态
 
@@ -61,7 +61,7 @@ public class Hero {
 //            Thread.sleep(1000);//假设减速持续4秒
             state = COMMON;
             System.out.println("------减速状态结束，变为正常状态------");
-        } else if (state == SWIM) {
+        } else if (state == DIZZINESS) {
             System.out.println("--------------晕眩状态---------------");
 //            Thread.sleep(1000);//假设眩晕持续2秒
             state = COMMON;

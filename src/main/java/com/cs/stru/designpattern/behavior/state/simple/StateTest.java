@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.behavior.state;
+package com.cs.stru.designpattern.behavior.state.simple;
 
 public class StateTest {
 
@@ -16,7 +16,7 @@ public class StateTest {
         Thread.sleep(1);
         hero.setState(Hero.SPEED_DOWN);
         Thread.sleep(1);
-        hero.setState(Hero.SWIM);
+        hero.setState(Hero.DIZZINESS);
         Thread.sleep(1);
         hero.stopRun();
 
