@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.structural.proxy.cglib;
+package com.cs.stru.designpattern.structural.proxy.step1.cglib;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

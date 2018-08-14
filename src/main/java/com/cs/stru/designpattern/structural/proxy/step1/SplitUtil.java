@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.structural.proxy;
+package com.cs.stru.designpattern.structural.proxy.step1;
 
 public class SplitUtil {
 

@@ -1,6 +1,6 @@
-package com.cs.stru.designpattern.structural.proxy.jdk;
+package com.cs.stru.designpattern.structural.proxy.step1.jdk;
 
-import com.cs.stru.designpattern.structural.proxy.simple.Hello;
+import com.cs.stru.designpattern.structural.proxy.step1.simple.Hello;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

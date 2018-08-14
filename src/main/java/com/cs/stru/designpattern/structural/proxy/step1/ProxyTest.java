@@ -1,10 +1,10 @@
-package com.cs.stru.designpattern.structural.proxy;
+package com.cs.stru.designpattern.structural.proxy.step1;
 
-import com.cs.stru.designpattern.structural.proxy.cglib.CGLibProxy;
-import com.cs.stru.designpattern.structural.proxy.jdk.JdkDynamicProxy;
-import com.cs.stru.designpattern.structural.proxy.simple.Hello;
-import com.cs.stru.designpattern.structural.proxy.simple.HelloImpl;
-import com.cs.stru.designpattern.structural.proxy.simple.HelloProxy;
+import com.cs.stru.designpattern.structural.proxy.step1.cglib.CGLibProxy;
+import com.cs.stru.designpattern.structural.proxy.step1.jdk.JdkDynamicProxy;
+import com.cs.stru.designpattern.structural.proxy.step1.simple.Hello;
+import com.cs.stru.designpattern.structural.proxy.step1.simple.HelloImpl;
+import com.cs.stru.designpattern.structural.proxy.step1.simple.HelloProxy;
 
 /**
  * Created by benjaminChan on 2018/7/12 0012 下午 7:16.
