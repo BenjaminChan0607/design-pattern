@@ -14,8 +14,8 @@ public class Test {
         Writer w1 = new Writer("xiaomi");
         Writer w2 = new Writer("huawei");
         
-        Platform.getInstance().add(w1);
-        Platform.getInstance().add(w2);
+        Platform.getInstance().publish(w1);
+        Platform.getInstance().publish(w2);
         //四人关注了xiaomi
         r1.subScribe("xiaomi");
         r2.subScribe("xiaomi");

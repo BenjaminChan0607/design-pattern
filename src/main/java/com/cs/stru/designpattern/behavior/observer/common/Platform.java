@@ -18,7 +18,7 @@ public class Platform {
         return platform;
     }
 
-    public void add(Writer writer) {
+    public void publish(Writer writer) {
         map.put(writer.getName(), writer);
     }
 

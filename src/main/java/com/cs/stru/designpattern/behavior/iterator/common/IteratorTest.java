@@ -1,5 +1,8 @@
 package com.cs.stru.designpattern.behavior.iterator.common;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Created by benjaminChan on 2018/7/30 0030 下午 4:55.
  */
@@ -37,5 +40,10 @@ public class IteratorTest {
             System.out.println(object);
         }
         System.out.println("----------------------------------------------------------------------");
+
+        Map<String, String> map = new HashMap<String, String>();
+        map.put("1", "tom");
+        for (Map.Entry<String, String> entry : map.entrySet()) {
+        }
     }
 }
