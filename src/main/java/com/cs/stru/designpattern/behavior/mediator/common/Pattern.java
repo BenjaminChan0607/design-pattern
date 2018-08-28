@@ -9,7 +9,7 @@ public abstract class Pattern {
     }
 
     public void attackedByPatternAlliance(Pattern pattern) {
-        patternAlliance.attack(this,pattern);
+        patternAlliance.attack(this, pattern);
     }
 
     public void defendedByPatternAlliance() {

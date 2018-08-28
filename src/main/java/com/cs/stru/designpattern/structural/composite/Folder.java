@@ -13,10 +13,10 @@ public class Folder implements IFile {
     private List<IFile> files;
 
     public Folder(String name) {
-        this(name,null);
+        this(name, null);
     }
 
-    public Folder(String name,IFile folder) {
+    public Folder(String name, IFile folder) {
         this.name = name;
         this.folder = folder;
         this.files = new ArrayList<IFile>();

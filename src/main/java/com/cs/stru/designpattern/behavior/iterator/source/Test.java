@@ -10,6 +10,7 @@ public class Test {
 
     /**
      * linkLast(E e);
+     *
      * @param args
      */
     public static void main(String[] args) {

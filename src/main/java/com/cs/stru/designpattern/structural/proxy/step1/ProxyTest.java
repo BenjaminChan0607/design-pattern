@@ -16,7 +16,7 @@ public class ProxyTest {
      * 静态代理一般采用组合的方式
      * <p>
      * 动态代理有jdk的动态代理和cglib的动态代理
-     *
+     * <p>
      * jdk的动态代理代理有相关接口的类
      * CGLib的动态代理代理没有相关接口的类
      *

@@ -10,7 +10,7 @@ public class HashSet<E> {
 
     private static final Object obj = new Object();
 
-    private Map<E, Object> map = new HashMap<E,Object>();
+    private Map<E, Object> map = new HashMap<E, Object>();
 
     public void add(E e) {
         map.put(e, obj);

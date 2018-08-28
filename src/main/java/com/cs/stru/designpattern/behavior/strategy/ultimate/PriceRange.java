@@ -10,6 +10,7 @@ import java.lang.annotation.Target;
 public @interface PriceRange {
 
     int max() default Integer.MAX_VALUE;
+
     int min() default Integer.MIN_VALUE;
 
     int order() default 0;

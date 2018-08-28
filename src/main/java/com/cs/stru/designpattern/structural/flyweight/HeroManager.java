@@ -10,7 +10,7 @@ public class HeroManager {
 
     private static HeroManager heroManager = new HeroManager();
 
-    public Map<String,AbstractHero> heroMap;
+    public Map<String, AbstractHero> heroMap;
 
     private HeroManager() {
         heroMap = new HashMap<String, AbstractHero>();

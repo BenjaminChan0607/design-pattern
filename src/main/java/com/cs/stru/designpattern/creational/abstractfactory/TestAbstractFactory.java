@@ -5,8 +5,9 @@ public class TestAbstractFactory {
     /**
      * 简单工厂，还是工厂方法，只有一个抽象产品，所以工厂方法模式中再添加一个创造抽象产品的方法就是抽象工厂模式了，
      * 相应的添加一个抽象产品，还有一系列具体的该抽象产品的实现；
-     *
+     * <p>
      * 可以用两个工厂方法替换抽象工厂模式
+     *
      * @param args
      */
     public static void main(String[] args) {

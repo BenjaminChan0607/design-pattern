@@ -3,7 +3,7 @@ package com.cs.stru.designpattern.behavior.visitor.simple;
 /**
  * Created by benjaminChan on 2018/7/30 0030 下午 2:03.
  */
-public class ConsumeBill implements Bill{
+public class ConsumeBill implements Bill {
 
     private double amount;
     private String item;

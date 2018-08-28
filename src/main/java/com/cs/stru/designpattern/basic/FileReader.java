@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class FileReader implements Reader {
 
-    private int a,b;
+    private int a, b;
 
     public FileReader(String filePath) throws IOException {
         File file = new File(filePath);

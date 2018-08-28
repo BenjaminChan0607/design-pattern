@@ -21,9 +21,11 @@ public abstract class AbstractPageBuilder implements PageBuilder {
         return stringBuffer.toString();
     }
 
-    public void appendHead(StringBuffer stringBuffer){}
+    public void appendHead(StringBuffer stringBuffer) {
+    }
 
-    public void appendBody(StringBuffer stringBuffer){}
+    public void appendBody(StringBuffer stringBuffer) {
+    }
 
     public StringBuffer getStringBuffer() {
         return stringBuffer;

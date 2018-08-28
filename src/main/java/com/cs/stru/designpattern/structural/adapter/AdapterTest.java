@@ -8,8 +8,9 @@ public class AdapterTest {
 
     /**
      * 适配器模式分为对象适配器和类适配器，一种采用继承，一种采用组合；
+     * <p>
+     * 适配器模式是补救措施？Android的ListView
      *
-     *  适配器模式是补救措施？Android的ListView
      * @param args
      */
     public static void main(String[] args) {

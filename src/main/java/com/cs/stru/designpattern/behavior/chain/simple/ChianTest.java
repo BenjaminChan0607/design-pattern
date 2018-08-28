@@ -12,8 +12,9 @@ public class ChianTest {
 
     /**
      * 定义：为了避免请求的发送者和接收者之间的耦合关系，使多个接受对象都有机会处理请求。将这些对象连成一条链，并沿着这条链传递该请求，直到有一个对象处理它为止。
-     *
+     * <p>
      * 定义：为了避免请求的发送者和接受者之间的耦合关系，使得多个接收对象都有机会处理请求。
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -51,7 +52,7 @@ public class ChianTest {
         print(hotels);
     }
 
-    public static void print(List<Hotel> hotels){
+    public static void print(List<Hotel> hotels) {
         for (Hotel hotel : hotels) {
             System.out.println("[" + hotel + "]的菜单:" + hotel.getMenu());
         }

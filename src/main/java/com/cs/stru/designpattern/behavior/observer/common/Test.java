@@ -13,7 +13,7 @@ public class Test {
         Reader r4 = new Reader("sari");
         Writer w1 = new Writer("xiaomi");
         Writer w2 = new Writer("huawei");
-        
+
         Platform.getInstance().publish(w1);
         Platform.getInstance().publish(w2);
         //四人关注了xiaomi

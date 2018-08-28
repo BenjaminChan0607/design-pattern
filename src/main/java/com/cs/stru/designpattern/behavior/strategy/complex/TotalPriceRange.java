@@ -9,5 +9,6 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface TotalPriceRange {
     int max() default Integer.MAX_VALUE;
+
     int min() default Integer.MIN_VALUE;
 }

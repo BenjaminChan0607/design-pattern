@@ -9,11 +9,12 @@ public class TestPrototype {
      * 定义：用原型实例指定创建对象的种类，并且通过拷贝这些原型创建新的对象。
      * <p>
      * 实现Cloneable接口便可以用clone方法来实现对象的拷贝
-     *
+     * <p>
      * 浅拷贝：clone方法执行的就是
      * 深拷贝：实现了Cloneable接口并重写了clone()方法的类中，所有的引用类型也需要实现Cloneable接口并重写clone()方法，并且将引用类型的属性都拷贝一遍；
-     *
+     * <p>
      * Person name,age;
+     *
      * @param args
      */
     public static void main(String[] args) {

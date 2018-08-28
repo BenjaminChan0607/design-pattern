@@ -6,7 +6,7 @@ package com.cs.stru.designpattern.behavior.visitor.common;
 public class IncomeBill extends AbstractBill {
 
     public IncomeBill(double amount, String item) {
-        super(amount,item);
+        super(amount, item);
     }
 
     public void accept(Viewer viewer) {

@@ -23,6 +23,7 @@ public class TestDecorator {
 
     /**
      * 装饰器模式能够动态扩展类功能，它采用组合的方式取代继承，使得各个功能的扩展更加独立和灵活
+     *
      * @throws IOException
      */
     private static void testIO() throws IOException {

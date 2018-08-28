@@ -17,7 +17,7 @@ public class Hotel {
     private int x;
     private int y;
 
-    private Map<String,Integer> menu;
+    private Map<String, Integer> menu;
 
     public Hotel(int x, int y, Map<String, Integer> menu) {
         this.x = x;
@@ -25,7 +25,7 @@ public class Hotel {
         this.menu = menu;
     }
 
-    public boolean order(int x,int y,Map<String, Integer> order){
+    public boolean order(int x, int y, Map<String, Integer> order) {
         number++;
         //如果距离小于500米并且订单中的食物不缺货，则订单成功，否则失败
         if (CommonUtils.getDistance(x, y, this.x, this.y) < MIN_DISTANCE && !CommonUtils.outOfStock(menu, order)) {
@@ -33,7 +33,7 @@ public class Hotel {
                 menu.put(name, menu.get(name) - order.get(name));
             }
             return true;
-        }else {
+        } else {
             return false;
         }
     }

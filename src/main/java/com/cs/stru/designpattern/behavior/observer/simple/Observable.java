@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * Created by benjaminChan on 2018/7/12 0012 下午 7:38.
- *
+ * <p>
  * 被观察者
  */
 public class Observable {

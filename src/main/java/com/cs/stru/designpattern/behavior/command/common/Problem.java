@@ -1,6 +1,6 @@
 package com.cs.stru.designpattern.behavior.command.common;
 
-public class Problem implements Task{
+public class Problem implements Task {
 
     private Programmer programmer;
 

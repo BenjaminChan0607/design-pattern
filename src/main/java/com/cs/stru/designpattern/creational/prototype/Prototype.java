@@ -3,9 +3,9 @@ package com.cs.stru.designpattern.creational.prototype;
 /**
  * Created by benjaminChan on 2018/7/9 0009 下午 7:02.
  */
-public class Prototype implements Cloneable{
+public class Prototype implements Cloneable {
 
-    private int a,b,c;
+    private int a, b, c;
     private String str;
     public Field field;
 
@@ -13,7 +13,7 @@ public class Prototype implements Cloneable{
         this.str = str;
     }
 
-    public Prototype(){
+    public Prototype() {
         this.a = 1;
         this.b = 2;
         this.c = 3;
@@ -29,11 +29,11 @@ public class Prototype implements Cloneable{
     }
 
     @Override
-    public Prototype clone(){
+    public Prototype clone() {
         Object object = null;
         try {
             object = super.clone();
-            ((Prototype)object).field = this.field.clone();
+            ((Prototype) object).field = this.field.clone();
 //            ((Prototype)object).str = this.str;
         } catch (CloneNotSupportedException e) {
             e.printStackTrace();

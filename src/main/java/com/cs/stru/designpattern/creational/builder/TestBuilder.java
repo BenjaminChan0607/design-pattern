@@ -2,7 +2,9 @@ package com.cs.stru.designpattern.creational.builder;
 
 public class TestBuilder {
 
-    /**     建造者模式
+    /**
+     * 建造者模式
+     *
      * @param args
      */
     public static void main(String[] args) {

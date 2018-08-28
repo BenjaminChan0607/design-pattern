@@ -7,12 +7,13 @@ public class Demo {
 
     /**
      * 分派：静态分派，多分派
-     *
+     * <p>
      * 静态分派：数个数和参数类型（重载）
      * JAVA是静态多分派的语言
-     *
+     * <p>
      * 动态分派：多态的特性（重写）
      * JAVA是动态单分派的语言
+     *
      * @param args
      */
     public static void main(String[] args) {

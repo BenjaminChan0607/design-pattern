@@ -16,6 +16,7 @@ public class AccountBook {
 
     /**
      * 查看者查看账本，账本被查看着查看
+     *
      * @param accountBookViewer
      */
     public void show(AccountBookViewer accountBookViewer) {

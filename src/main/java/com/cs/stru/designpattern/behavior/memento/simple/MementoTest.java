@@ -7,6 +7,7 @@ public class MementoTest {
 
     /**
      * 记录之前的状态
+     *
      * @param args
      */
     public static void main(String[] args) {

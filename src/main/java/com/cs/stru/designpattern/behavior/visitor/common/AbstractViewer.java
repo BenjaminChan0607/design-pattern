@@ -11,5 +11,6 @@ public abstract class AbstractViewer implements Viewer {
     //查看收入的单子
     abstract void viewIncomeBill(IncomeBill bill);
 
-    public final void viewAbstractBill(AbstractBill bill){}
+    public final void viewAbstractBill(AbstractBill bill) {
+    }
 }

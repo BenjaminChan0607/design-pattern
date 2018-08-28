@@ -29,11 +29,10 @@ public class TestFactoryMethod {
 
     /**
      * factory method
-     *
+     * <p>
      * Driver                                   Connection
      * com.mysql.jdbc.Driver                    ConnectionImpl
      * jdbc.oracle.Driver
-     *
      *
      * @throws ClassNotFoundException
      * @throws SQLException
@@ -62,7 +61,6 @@ public class TestFactoryMethod {
 
 
     /**
-     *
      * Iterable                 Iterator
      * ArrayList HashSet        AbstractList.Itr    KeyIterator
      */

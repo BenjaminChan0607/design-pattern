@@ -9,7 +9,9 @@ import java.lang.reflect.Method;
 public class CGLibProxy implements MethodInterceptor {
 
     private static CGLibProxy cgLibProxy = new CGLibProxy();
-    private CGLibProxy(){}
+
+    private CGLibProxy() {
+    }
 
     public static CGLibProxy getInstance() {
         return cgLibProxy;

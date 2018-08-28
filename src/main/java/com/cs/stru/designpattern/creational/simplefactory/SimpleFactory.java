@@ -2,7 +2,8 @@ package com.cs.stru.designpattern.creational.simplefactory;
 
 public class SimpleFactory {
 
-    private SimpleFactory(){}
+    private SimpleFactory() {
+    }
 
     public static Product createProduct(Product product) {
         if (product instanceof ProductA) {

@@ -1,7 +1,5 @@
 package com.cs.stru.designpattern.behavior.state.common;
 
-import org.omg.CORBA.PUBLIC_MEMBER;
-
 /**
  * Created by benjaminChan on 2018/7/27 0027 上午 9:47.
  */

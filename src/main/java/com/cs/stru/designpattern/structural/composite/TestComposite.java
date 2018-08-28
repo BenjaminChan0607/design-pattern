@@ -5,14 +5,15 @@ package com.cs.stru.designpattern.structural.composite;
  */
 public class TestComposite {
     /**
-     *  定义：(GoF《设计模式》)：将对象组合成树形结构以表示“部分整体”的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
+     * 定义：(GoF《设计模式》)：将对象组合成树形结构以表示“部分整体”的层次结构。组合模式使得用户对单个对象和组合对象的使用具有一致性。
+     * <p>
+     * 组合模式使得用户对单个对象和组合对象的使用具有一致性；
+     * 组合模式用来表示部分和整体之间的层次结构（类似于树型结构）
+     * <p>
+     * 组合模式，文件系统
+     * <p>
+     * Component : composite/leaf
      *
-     *  组合模式使得用户对单个对象和组合对象的使用具有一致性；
-     *  组合模式用来表示部分和整体之间的层次结构（类似于树型结构）
-     *
-     *  组合模式，文件系统
-     *
-     *  Component : composite/leaf
      * @param args
      */
     public static void main(String[] args) {
@@ -58,23 +59,23 @@ public class TestComposite {
         movieFolder.createFile("movie 1");
         movieFolder.createFile("movie 2");
 
-        display(null,root);
+        display(null, root);
 
         System.out.println("-------------------------------------------------------------------");
         proFolder.delete();
         movieFolder.getFile(1).delete();
         System.out.println("-------------------------------------------------------------------");
 
-        display(null,root);
+        display(null, root);
     }
 
     //递归 打印文件系统
-    public static void display(String prefix,IFile iFile){
+    public static void display(String prefix, IFile iFile) {
         if (prefix == null) {
             prefix = "";
         }
         System.out.println(prefix + iFile.getName());
-        if(iFile instanceof Folder){
+        if (iFile instanceof Folder) {
             for (int i = 0; ; i++) {
                 try {
                     if (iFile.getFile(i) != null) {
