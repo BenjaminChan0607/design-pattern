@@ -1,9 +1,9 @@
-package com.cs.stru.designpattern.rpc.client;
+package com.cs.stru.designpattern.extra.rpc.client;
 
-import com.cs.stru.designpattern.rpc.registry.Server;
-import com.cs.stru.designpattern.rpc.registry.ServerCenter;
-import com.cs.stru.designpattern.rpc.service.HelloService;
-import com.cs.stru.designpattern.rpc.service.HelloServiceImpl;
+import com.cs.stru.designpattern.extra.rpc.registry.Server;
+import com.cs.stru.designpattern.extra.rpc.registry.ServerCenter;
+import com.cs.stru.designpattern.extra.rpc.service.HelloService;
+import com.cs.stru.designpattern.extra.rpc.service.HelloServiceImpl;
 
 /**
  * @author benjaminChan

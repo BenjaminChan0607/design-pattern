@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.rpc.registry;
+package com.cs.stru.designpattern.extra.rpc.registry;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

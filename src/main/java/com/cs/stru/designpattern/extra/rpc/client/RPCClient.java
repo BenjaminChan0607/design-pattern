@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.rpc.client;
+package com.cs.stru.designpattern.extra.rpc.client;
 
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;

@@ -1,6 +1,6 @@
-package com.cs.stru.designpattern.rpc.client;
+package com.cs.stru.designpattern.extra.rpc.client;
 
-import com.cs.stru.designpattern.rpc.service.HelloService;
+import com.cs.stru.designpattern.extra.rpc.service.HelloService;
 
 import java.net.InetSocketAddress;
 

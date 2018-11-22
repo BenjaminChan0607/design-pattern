@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.rpc.service;
+package com.cs.stru.designpattern.extra.rpc.service;
 
 /**
  * @author benjaminChan
