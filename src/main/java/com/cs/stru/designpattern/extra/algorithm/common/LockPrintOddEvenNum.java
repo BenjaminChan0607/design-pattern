@@ -34,11 +34,14 @@ public class LockPrintOddEvenNum {
             while (atomicInteger.get() < TOTAL_NUM) {
                 if (flag) {
                     reentrantLock.lock();
-                    System.out.println("OddNum:" + atomicInteger.get());
 
-                    flag = false;
-                    atomicInteger.getAndIncrement();
-                    reentrantLock.unlock();
+                    try{
+                        System.out.println("OddNum:" + atomicInteger.get());
+                        flag = false;
+                        atomicInteger.getAndIncrement();
+                    }finally {
+                        reentrantLock.unlock();
+                    }
                 }
             }
         }
@@ -51,11 +54,14 @@ public class LockPrintOddEvenNum {
             while (atomicInteger.get() < TOTAL_NUM) {
                 if (!flag) {
                     reentrantLock.lock();
-                    System.out.println("EvenNum:" + atomicInteger.get());
 
-                    flag = true;
-                    atomicInteger.getAndIncrement();
-                    reentrantLock.unlock();
+                    try{
+                        System.out.println("EvenNum:" + atomicInteger.get());
+                        flag = true;
+                        atomicInteger.getAndIncrement();
+                    }finally {
+                        reentrantLock.unlock();
+                    }
                 }
             }
         }
