@@ -54,11 +54,11 @@ public class BinaryNode {
 
             if (current.leftNode != null) {
                 queue.add(current.leftNode);
-                System.out.println("add left node:" + current.leftNode.getData());
+                System.out.println("add left next:" + current.leftNode.getData());
             }
             if (current.rightNode != null) {
                 queue.add(current.rightNode);
-                System.out.println("add right node:" + current.rightNode.getData());
+                System.out.println("add right next:" + current.rightNode.getData());
             }
             System.out.println("queue size:" + queue.size() + "," + queue.toString());
             System.out.println("-------------------------------");
