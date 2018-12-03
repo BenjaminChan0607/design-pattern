@@ -1,4 +1,4 @@
-package com.cs.stru.designpattern.extra.algorithm.common;
+package com.cs.stru.designpattern.extra.algorithm.concurrent;
 
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.locks.ReentrantLock;
