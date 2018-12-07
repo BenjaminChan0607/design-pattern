@@ -9,7 +9,7 @@ public class TestFactoryMethod {
         /**
          * factory method
          */
-/*        Factory factory = new FactoryA();
+        Factory factory = new FactoryA();
         Light light = factory.getProduce();
         light.turnOn();
         light.turnOff();
@@ -17,14 +17,14 @@ public class TestFactoryMethod {
         factory = new FactoryB();
         light = factory.getProduce();
         light.turnOn();
-        light.turnOff();*/
-        try {
-            new TestFactoryMethod().testJdbc();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+        light.turnOff();
+//        try {
+//            new TestFactoryMethod().testJdbc();
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
     }
 
     /**
