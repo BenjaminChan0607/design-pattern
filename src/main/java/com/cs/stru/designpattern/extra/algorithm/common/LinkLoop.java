@@ -2,7 +2,7 @@ package com.cs.stru.designpattern.extra.algorithm.common;
 
 public class LinkLoop {
 
-    public static class Node{
+    public static class Node {
         private Object data;
         public Node next;
 

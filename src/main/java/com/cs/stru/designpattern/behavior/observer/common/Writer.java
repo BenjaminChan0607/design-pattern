@@ -23,7 +23,7 @@ public class Writer extends Observable {
     }
 
     public void addNovel(String novel) {
-        System.out.println(name + "publish new" + novel);
+        System.out.println(name + " publish new" + novel);
         lastNovel = novel;
         setChanged();
         notifyObservers();

@@ -35,11 +35,11 @@ public class LockPrintOddEvenNum {
                 if (flag) {
                     reentrantLock.lock();
 
-                    try{
+                    try {
                         System.out.println("OddNum:" + atomicInteger.get());
                         flag = false;
                         atomicInteger.getAndIncrement();
-                    }finally {
+                    } finally {
                         reentrantLock.unlock();
                     }
                 }
@@ -55,11 +55,11 @@ public class LockPrintOddEvenNum {
                 if (!flag) {
                     reentrantLock.lock();
 
-                    try{
+                    try {
                         System.out.println("EvenNum:" + atomicInteger.get());
                         flag = true;
                         atomicInteger.getAndIncrement();
-                    }finally {
+                    } finally {
                         reentrantLock.unlock();
                     }
                 }

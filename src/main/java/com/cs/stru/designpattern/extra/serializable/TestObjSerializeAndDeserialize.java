@@ -6,7 +6,7 @@ import java.text.MessageFormat;
 /**
  * @author benjaminChan
  * @date 2018/8/28 0028 下午 2:47
- *
+ * <p>
  * 序列化两种作用：1)将对象的字节序列持久化到硬盘，可以避免内存开销过大（比如保存在内存中的Session对象信息）；2)在PRC多个进程之间传输字节序列
  */
 public class TestObjSerializeAndDeserialize {

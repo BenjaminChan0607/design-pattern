@@ -31,8 +31,8 @@ public class Test {
         //huawei写了JAVA编程思想
         w2.addNovel("JAVA编程思想");
         //tom取消关注xiaomi
-        r1.unSubScribe("xiaomi");
-        //xiaomi再写书将不会通知tom
-        w1.addNovel("观察者模式");
+//        r1.unSubScribe("xiaomi");
+//        //xiaomi再写书将不会通知tom
+//        w1.addNovel("观察者模式");
     }
 }
