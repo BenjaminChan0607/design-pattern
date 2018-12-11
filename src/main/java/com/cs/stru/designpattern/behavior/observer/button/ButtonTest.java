@@ -3,7 +3,7 @@ package com.cs.stru.designpattern.behavior.observer.button;
 /**
  * @author benjaminChan
  * @date 2018/12/10 0010 下午 4:57
- *  观察者模式：发布（release）--订阅（subscibe），变化（publish）--更新（update）
+ *  观察者模式：发布（release）--订阅（subscribe），变化（listen）--更新（update）
     事件驱动模型：请求（request）--响应（response），事件发生（occur）--事件处理（handle）
  */
 public class ButtonTest {

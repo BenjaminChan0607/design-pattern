@@ -33,7 +33,7 @@ public class Reader implements WriterListener {
     }
 
     @Override
-    public void change(WriterEven writerEven) {
+    public void listen(WriterEven writerEven) {
         Writer writer = writerEven.getWriter();
         System.out.println(getName() + " receive notify from publisher " + writer.getName() + "," + writer.getLastPublisherName());
     }

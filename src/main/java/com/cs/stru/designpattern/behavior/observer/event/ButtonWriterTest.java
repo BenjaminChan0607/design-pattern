@@ -12,7 +12,7 @@ public class ButtonWriterTest {
         buttonWriter = new ButtonWriter("submit");
         buttonWriter.setWriterListener(new WriterListener() {
             @Override
-            public void change(WriterEven writerEven) {
+            public void listen(WriterEven writerEven) {
                 Writer writer = writerEven.getWriter();
                 System.out.println("monitor publish from publisher " + writer.getName());
                 System.out.println("monitor publish from publisher " + writer.getName() + "," + writer.getLastPublisherName());

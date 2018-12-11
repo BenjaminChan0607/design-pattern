@@ -40,7 +40,7 @@ public class Writer {
     private void triggerEvent() {
         WriterEven writerEven = new WriterEven(this);
         for (WriterListener writerListener : writerListenerSet) {
-            writerListener.change(writerEven);
+            writerListener.listen(writerEven);
         }
     }
 

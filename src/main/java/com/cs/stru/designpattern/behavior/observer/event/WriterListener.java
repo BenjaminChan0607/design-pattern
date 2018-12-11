@@ -5,5 +5,5 @@ package com.cs.stru.designpattern.behavior.observer.event;
  * @date 2018/12/10 0010 下午 3:46
  */
 public interface WriterListener {
-    void change(WriterEven writerEven);
+    void listen(WriterEven writerEven);
 }

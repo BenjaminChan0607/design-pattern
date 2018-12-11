@@ -19,6 +19,6 @@ public class ButtonWriter extends Writer{
      * publish/update/publish
      */
     public void publish() {
-        writerListener.change(new WriterEven(this));
+        writerListener.listen(new WriterEven(this));
     }
 }
