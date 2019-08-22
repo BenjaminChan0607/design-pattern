@@ -1,5 +1,7 @@
 package com.cs.stru.designpattern.structural.decorator;
 
+import com.cs.stru.designpattern.utils.PrintUtil;
+
 import java.io.*;
 
 /**
@@ -17,8 +19,8 @@ public class TestDecorator {
      * @param args
      */
     public static void main(String[] args) throws Exception {
-//        test();
-        testIO();
+        test();
+//        testIO();
     }
 
     /**
@@ -80,17 +82,21 @@ public class TestDecorator {
     private static void test() {
         Component component = new ConcreteDecorator();
         component.method();
+        PrintUtil.printSplit();
 
         ConcreteDecoratorA concreteDecoratorA = new ConcreteDecoratorA(component);
         concreteDecoratorA.method();
         concreteDecoratorA.methodA();
+        PrintUtil.printSplit();
 
         ConcreteDecoratorB concreteDecoratorB = new ConcreteDecoratorB(component);
         concreteDecoratorB.method();
         concreteDecoratorB.methodB();
+        PrintUtil.printSplit();
 
         concreteDecoratorB = new ConcreteDecoratorB(concreteDecoratorA);
         concreteDecoratorB.method();
         concreteDecoratorB.methodB();
+        PrintUtil.printSplit();
     }
 }
